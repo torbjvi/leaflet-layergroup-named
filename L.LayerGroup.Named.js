@@ -1,6 +1,5 @@
 L.LayerGroup.Named = L.LayerGroup.extend({
     addLayer: function (name, layer) {
-        var id = name;
         this._layers[name] = layer;
         if (this._map) {
             this._map.addLayer(layer);
@@ -19,5 +18,5 @@ L.LayerGroup.Named = L.LayerGroup.extend({
     }
 });
 L.layerGroup.named = function () {
-    return new L.LayerGroup();
+    return new L.LayerGroup.Named();
 };
