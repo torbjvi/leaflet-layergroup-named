@@ -12,3 +12,5 @@ layergroup.addLayer('name' , layer);
 layergroup.getLayer('name');
 
 layergroup.removeLayer('name');
+
+Created in my free time for a work project
